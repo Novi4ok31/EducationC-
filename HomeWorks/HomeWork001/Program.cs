@@ -25,7 +25,7 @@ if (number1 = number2)
 Console.WriteLine("The maximum of two numbers is " + max);
 */
 
-
+/*
 // Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
 
 Console.Write("Input a number1: ");
@@ -44,4 +44,20 @@ if (number3 > max)
     max = number3;
 }
 Console.WriteLine("The maximum of three numbers is " + max);
+*/
 
+// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+
+Console.Write("Enter a number to check: ");
+int num = Convert.ToInt32(Console.ReadLine());
+if (num % 2 == 0)
+{
+    Console.WriteLine("Our number is even");
+}
+else
+{
+    Console.WriteLine("Our number is odd");
+}
+    
+
+    
