@@ -58,4 +58,24 @@ int n2 = Convert.ToInt32(Console.ReadLine());
 IsDivisionable(n1, n2);
 */
 
-// Задача 4
+// Задача 4. Принимает на вход число и проверяет кратно ли оно одновременно двум числам 7 и 21
+/*
+bool IsDivis(int number)
+{
+    if(number %7 == 0 && number %23 == 0)
+        return true;
+    else
+        return false;
+}
+*/
+bool IsDivis(int number)
+{
+    return number %7 == 0 && number %23 == 0;
+   
+}
+
+Console.Write("Input number: ");
+int n = Convert.ToInt32(Console.ReadLine());
+
+bool IsDivision =IsDivis(n);
+Console.WriteLine(IsDivision);
