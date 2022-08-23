@@ -60,7 +60,22 @@ double result = FindDistance(xA,yA,xB,yB);
 Console.WriteLine($"Distance is {result} ");
 */
 
-// Задача3. 
+// Задача3. Принимает на вход число (N) и выдает на консоль квадраты чисел от 1 до N
+
+void ShowSquare (int n)
+{
+    int current = 1;
+    while (current <= n)
+    {
+        Console.WriteLine($"Квадрат числа {current} равен {current*current};");
+        current ++;
+    } 
+        
+}
+Console.Write("Введите любое целое число: ");
+int square = Convert.ToInt32(Console.ReadLine());
+ShowSquare(square);
+
 
 
 
