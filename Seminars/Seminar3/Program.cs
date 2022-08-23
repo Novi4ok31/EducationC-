@@ -23,7 +23,7 @@ if (quartNum == 0)
 else
     Console.WriteLine($"Point is located on {quartNum} quart.");
 */
-
+/*
 // Программа, которая по заданному номеру четверти показывает диапозон возможных координат точек в этой четверти (x,y)
 
 void FindPoint(int quart)
@@ -37,5 +37,30 @@ void FindPoint(int quart)
 Console.Write("Input number of quart: ");
 int quart = Convert.ToInt32(Console.ReadLine());
 FindPoint(quart);
+*/
+/*
+// Задача3. Принимает координаты двух точек и находит расстояние между ними в 2D пространстве.
 
-   
+double FindDistance(double xA, double yA, double xB, double yB)
+{
+   return Math.Sqrt(Math.Pow(xB-xA, 2) + Math.Pow(yB-yA, 2));
+}
+
+Console.Write("Input the x coordinate of the first point: ");
+double xA = Convert.ToDouble(Console.ReadLine());
+Console.Write("Input the y coordinate of the first point: ");
+double yA = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Input the x coordinate of the second point: ");
+double xB = Convert.ToDouble(Console.ReadLine());
+Console.Write("Input the y coordinate of the second point: ");
+double yB = Convert.ToDouble(Console.ReadLine());
+
+double result = FindDistance(xA,yA,xB,yB);
+Console.WriteLine($"Distance is {result} ");
+*/
+
+// Задача3. 
+
+
+
