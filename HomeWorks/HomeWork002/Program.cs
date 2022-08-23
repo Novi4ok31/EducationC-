@@ -37,18 +37,27 @@ else
 */
 
 // Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным?
-
+/*
 bool CheckingHolidays (int number)
 {
-    if(number == 6 && number == 7)
+    if(number == 6 || number == 7)
         return true;
     else 
         return false;
 }
 
-Console.Write("Input number of 1 to 7 (Day of week): ");
+Console.Write("Input day of week (number of 1 to 7): ");
 int n = Convert.ToInt32(Console.ReadLine());
 bool result = CheckingHolidays(n);
-Console.WriteLine(result);
-
-//Your number is not correct
+Console.WriteLine($"{n} -> {result}");
+*/
+// Вариант 2 - не работает
+/*
+Console.Write("Input day of week (number of 1 to 7): ");
+int n = Convert.ToInt32(Console.ReadLine());
+if(n>0 && n<=7)
+    bool result = CheckingHolidays(n);
+    Console.WriteLine($"{n} -> {result}");
+else
+    Console.WriteLine("Your number is not correct");
+*/

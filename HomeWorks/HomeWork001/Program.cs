@@ -12,7 +12,7 @@ if (number2 > max)
 Console.WriteLine("The maximum of two numbers is " + max);
 */
 // Вариант 2 с ошибкой
-/*
+
 Console.Write("Input a number1: ");
 int number1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input a number2: ");
@@ -20,10 +20,10 @@ int number2 = Convert.ToInt32(Console.ReadLine());
 int max = number1;
 if (number2 > max)
     max = number2;
-if (number1 = number2)
+if (number1 == number2)
     Console.WriteLine("The numbers are equal");
 Console.WriteLine("The maximum of two numbers is " + max);
-*/
+
 
 /*
 // Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
