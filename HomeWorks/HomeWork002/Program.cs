@@ -14,27 +14,41 @@ int number = Convert.ToInt32(Console.ReadLine());
 int result = CutDecNumber(number);
 Console.WriteLine($"Second digit of three-digit number is {result}");
 */
-/*
+
 //Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
-int FindTreeDigit (int number)
+void FindTreeDigit (int number)
 {
-    for (int i = 0; i < 3; i++)
+    if (-100 < number && number < 100)
     {
-        int treeDigit = number %10;
-    }   
-    return treeDigit;
+        Console.WriteLine($"Number {number} there are not third digits");
+    } 
+    else if (number <= -100)
+        {
+            int positiveNumber = number * (-1);
+            while (positiveNumber > 999)
+            {
+                positiveNumber = positiveNumber /10;
+            } 
+            int ed = positiveNumber %10;
+            Console.WriteLine($"Tree-digit of {number} is {ed}");
+        }
+    else if (number >= 100)
+        {
+            int currentNumber = number;
+            while (currentNumber > 999)
+            {
+                currentNumber = currentNumber /10;
+            }
+            int ed = currentNumber %10;
+            Console.WriteLine($"Tree-digit of {number} is {ed}");
+        } 
 }
 
 Console.Write("Input a number: ");
-int number = Convert.ToInt32(Console.ReadLine());
-int result = FindTreeDigit(number);
-if(result > 0)
-    Console.WriteLine($"Tree-digit of {number} is {result}");
-else 
-    Console.WriteLine("There are no third digits");
+int result = Convert.ToInt32(Console.ReadLine());
+FindTreeDigit(result);
 
-*/
 
 // Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным?
 /*
