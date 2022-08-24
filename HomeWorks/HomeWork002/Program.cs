@@ -14,7 +14,7 @@ int number = Convert.ToInt32(Console.ReadLine());
 int result = CutDecNumber(number);
 Console.WriteLine($"Second digit of three-digit number is {result}");
 */
-
+/*
 //Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
 void FindTreeDigit (int number)
@@ -48,8 +48,7 @@ void FindTreeDigit (int number)
 Console.Write("Input a number: ");
 int result = Convert.ToInt32(Console.ReadLine());
 FindTreeDigit(result);
-
-
+*/
 // Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным?
 /*
 bool CheckingHolidays (int number)
