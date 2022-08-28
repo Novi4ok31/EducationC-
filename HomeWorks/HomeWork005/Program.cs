@@ -115,14 +115,14 @@ void ShowArray(double[] array)
 
 double DifferenceMaxMinElements (double[] array)
 {
-    double maxEl = 0;
-    double minEl = 0;
+    double maxEl = array[0];
+    double minEl = array[0];
     for (int i = 0; i < array.Length; i++)
     {      
         if (array[i] < minEl) minEl = array[i];
         if (array[i] > maxEl) maxEl = array[i];
     }
-    return  (maxEl - minEl);
+    return (maxEl - minEl);
 }
 
 
