@@ -63,3 +63,4 @@ double b2 = Convert.ToDouble(Console.ReadLine());
 PointIntersection(k1,b1,k2,b2);
 */
 
+// Вторая попытка
