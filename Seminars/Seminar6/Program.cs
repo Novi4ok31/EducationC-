@@ -119,7 +119,7 @@ void DecimalToBinary (int number)
     while (number > 0)
     {
         result = number % 2 + result;
-        number /= 2; 
+        number /= 2; // number = number / 2
     }
     Console.WriteLine(result);
 }
